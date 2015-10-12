@@ -8,11 +8,13 @@ variable "secret_key" {
 }
 
 variable  "region" {
-  description = " us-west-1"
+  description = " default region"
+  default = "us-west-1"
 }
 
 variable "vpc_cidr" {
-  description = " 10.128.0.0/16"
+  description = " default subnet range"
+  default = "10.128.0.0/16"
 }
 
 variable "public_subnet_cidr" {
